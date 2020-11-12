@@ -21,6 +21,6 @@ public class test extends TimerTask{
           AccountHolder ah = new AccountHolder(an);
           ah.counter = 0;
           ah.setIsBlocked(0);
-          System.out.println(an + " pleaseeee");
+          
    } 
 }
