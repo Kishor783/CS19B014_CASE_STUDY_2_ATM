@@ -1,3 +1,4 @@
+
 package ATM_CASESTUDY;
 
 import java.awt.EventQueue;
@@ -129,7 +130,7 @@ public class ATM {
 				
 				if(ah.counter == b.getNoOfTries()) {
 					ah.setIsBlocked(1);
-					test t = new test();   // calls test class which contains timerr method
+					test t = new test(ah.getAccNum());   // calls test class which contains timerr method
 					t.timerr(ah.getAccNum());  // sets the timer so that card is unblocked after certain time.
 					JOptionPane.showMessageDialog(null, "Your Card is Blocked for "+b.getTimeLimit()+" minutes");
 				}
@@ -313,7 +314,7 @@ public class ATM {
 				
 				if(ah.counter == b.getNoOfTries()) {
 					ah.setIsBlocked(1);
-					test t = new test();   // calls test class which contains timerr method
+					test t = new test(ah.getAccNum());   // calls test class which contains timerr method
 					t.timerr(ah.getAccNum());  // sets the timer so that card is unblocked after certain time.
 					JOptionPane.showMessageDialog(null, "Your Card is Blocked for "+b.getTimeLimit()+" minutes");
 				}
